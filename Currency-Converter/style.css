@@ -1,0 +1,191 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #2563eb, #312e81);
+            color: #1f2937;
+        }
+
+        /* Card Container */
+        .card {
+            background-color: white;
+            width: 100%;
+            max-width: 440px;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* Deep shadow */
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.01);
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #4f46e5; 
+            padding: 32px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: skewY(-12deg) translateY(100%);
+        }
+
+        .header h1 {
+            margin: 0 0 5px 0;
+            font-size: 1.875rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .header p {
+            margin: 0;
+            color: #c7d2fe; 
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        
+        .card-body {
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        
+        .form-group label {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #6b7280; /* Gray-500 */
+            margin-bottom: 8px;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .currency-symbol {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+            font-weight: 700;
+        }
+
+        /* Inputs & Selects Shared Styles */
+        input[type="number"], select {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb; 
+            background-color: #f9fafb; 
+            font-size: 1.125rem; 
+            font-weight: 700;
+            color: #1f2937;
+            outline: none;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        input[type="number"] {
+            padding-left: 32px; 
+        }
+
+        /* Focus States */
+        input:focus, select:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+        }
+
+        /* Grid for From/To */
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        /* Action Button */
+        .btn-convert {
+            width: 100%;
+            background-color: #4f46e5;
+            color: white;
+            font-weight: 700;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.125rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .btn-convert:hover {
+            background-color: #4338ca; 
+            transform: translateY(-2px);
+        }
+
+        .btn-convert:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        /* Result Section */
+        .result-area {
+            margin-top: 10px;
+            padding-top: 24px;
+            border-top: 1px solid #f3f4f6;
+            text-align: center;
+        }
+
+        .result-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        #result {
+            font-size: 2.25rem; 
+            font-weight: 900;
+            color: #312e81; 
+            line-height: 1.1;
+            word-break: break-word;
+            margin: 0;
+        }
