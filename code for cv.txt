@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=0.65in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+% No paragraph indent
+\setlength{\parindent}{0pt}
+
+% Reduce vertical spacing
+\setlength{\parskip}{3pt}
+
+% Section formatting
+\titleformat{\section}
+  {\bfseries\large\uppercase}
+  {}
+  {0pt}
+  {}
+  [\vspace{10pt}\titlerule]
+
+\titlespacing*{\section}{0pt}{8pt}{6pt}
+
+% Tighter item spacing
+\setlist{itemsep=2pt, topsep=2pt, leftmargin=*}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{minipage}{0.68\textwidth}
+    {\Large \textbf{DIVYA VIKASH}}\\[2pt]
+    Patna, Bihar 800027 · 
+    \href{mailto:divyavikash620@gmail.com}{divyavikash620@gmail.com} · 
+    \href{tel:+919315292324}{+91 9315292324} \\
+    \href{https://www.linkedin.com/in/divya-vikash-518776384/}{LinkedIn} ·
+    \href{https://github.com/divyavikash620}{GitHub}
+\end{minipage}
+\begin{minipage}{0.28\textwidth}
+\centering
+\includegraphics[width=0.9\linewidth]{1763995045779.jpg}
+\end{minipage}
+
+% ---------- SUMMARY ----------
+\section*{Professional Summary}
+Driven first-semester CSE student with strong interest in problem-solving, competitive programming, and building practical projects. Focused on learning core CS fundamentals and improving logical thinking.
+
+% ---------- EDUCATION ----------
+\section*{Education}
+\textbf{Lovely Professional University} \hfill Aug 2025 \\
+B.Tech in Computer Science \\
+\textit{Relevant Coursework:} Python, Web Development, OOP
+
+\textbf{Satyam International} — Class XII: 88.0\% \\
+\textbf{New Era High School} — Class X: 98.0\%
+
+% ---------- TECH SKILLS ----------
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{Languages:} Python, JavaScript
+    \item \textbf{Frontend:} HTML, CSS, JavaScript
+    \item \textbf{Tools:} Git, GitHub, VS Code
+    \item \textbf{Concepts:} OOP, Basic APIs
+\end{itemize}
+
+% ---------- PROJECTS ----------
+\section*{Projects}
+\textbf{Adventure Text Game (Python)} — Branching storyline using functions.
+
+\textbf{Hangman Game (Python)} — ASCII visuals and full game logic.
+
+\textbf{Functional Calculator (CSS + JS)} — Modular arithmetic engine + clean UI.
+
+\textbf{Currency Converter (JS + API)} — Real-time rates using Fetch API.
+
+% ---------- SOFT SKILLS ----------
+\section*{Soft Skills}
+Problem-solving, Logical Thinking, Team Collaboration, Communication, Adaptability
+
+% ---------- ACHIEVEMENTS ----------
+\section*{Achievements}
+\begin{itemize}
+    \item Solved 150+ CP problems on CodeChef (1192 Highest Rating)
+    \item LinkedIn Learning certificate in Time Management
+    \item Zonal Rank-3 in IMO 2022–2023
+\end{itemize}
+
+\end{document}
